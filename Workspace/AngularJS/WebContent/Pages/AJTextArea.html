@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html data-ng-app="myNoteApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>My Notes</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+</head>
+<body>
+	<div data-ng-controller="MyNoteController">
+		<h3>Note Application</h3>
+		<span><textarea data-ng-model="tArea" rows="10" cols="40"></textarea>
+		</span><br /> 
+		<span><button data-ng-click="save()">Save</button>
+			<button data-ng-click="reset()">reset</button>
+		</span><br/>
+		<span>
+			Number of characters left: <span data-ng-bind="left()"></span>		
+		</span>
+	</div>
+	<script type="text/javascript">
+		angular.module("myNoteApp",[]).controller("MyNoteController", function($scope){
+		
+		$scope.tArea = "";
+		$scope.left = function(){ return 100 - $scope.tArea.length;};
+		$scope.reset = function(){ $scope.tArea = ""; };
+		$scope.save = function(){ alert("Notes saved.");};
+		
+		
+		
+		});
+	
+	</script>
+</body>
+</html>

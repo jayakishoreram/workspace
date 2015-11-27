@@ -1,0 +1,3 @@
+D\:/JK/Workspace/Store/WebContent = Store.war
+D\:/JK/Workspace/.metadata/.plugins/org.eclipse.core.resources/Store/build/weboutput = Store.war
+D\:/JK/Workspace/Store/build/classes = Store.war/WEB-INF/classes

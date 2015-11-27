@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AJ HTML DOMe</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+</head>
+<body>
+	<div data-ng-app="">
+		<p>
+			<button data-ng-disabled="mySwitch" value="Click Me">Click Me!</button>
+		</p>
+		<p>
+		<input type="checkbox" data-ng-model="mySwitch">Hay</input>
+		</p>
+		
+		<span data-ng-show="hour < 12"> Am I Visible</span>
+		<input type="number" data-ng-bind="hour">
+	</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Http request page</title>
+<style>
+table,th,td {
+	border: 1px solid grey;
+	border-collapse: collapse;
+	padding: 5px;
+}
+
+table tr:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) {
+	background-color: #ffffff;
+}
+</style>
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</head>
+<body>
+	<!-- <div data-ng-app="httpApp" data-ng-controller="httpReqController">
+		<ul data-ng-repeat="rc in recs">
+			<li >{{ rc.Name + " - "+
+				rc.Country}}</li>
+
+		</ul> 
+		</div>-->
+	<div data-ng-app="httpApp" data-ng-controller="httpReqController">
+		<table>
+			<thead>
+				<tr>
+					<td>Name</td>
+					<td>Country</td>
+				</tr>
+			</thead>
+			<tr data-ng-repeat="rec in recs">
+				<td><output data-ng-bind="rec.Name" ></output></td>
+				<td><output data-ng-bind="rec.Country"></output></td>
+			</tr>
+		</table>
+	</div>
+
+
+	<script type="text/javascript">
+		angular.module("httpApp", []).controller(
+				"httpReqController",
+				function($scope, $http) {
+					$http.get("http://www.w3schools.com/angular/customers.php")
+							.success(function(resp) {
+								console.log("Responce records:  "+resp.records);
+								$scope.recs = resp.records;
+							});
+
+				});
+	</script>
+
+	<!-- <script type="text/javascript">
+		var app = angular.module('httpApp', []);
+		app.controller('httpReqController', function($scope, $http) {
+			$http.get("http://www.w3schools.com/angular/customers.php")
+					.success(function(response) {
+						$scope.names = response.records;
+					});
+		});
+	</script> -->
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.jk.string&apos; to &apos;com.jk.corejava.string&apos;&#x0D;&#x0A;- Original project: &apos;CoreJava&apos;&#x0D;&#x0A;- Original element: &apos;CoreJava/src/com.jk.string&apos;&#x0D;&#x0A;- Renamed element: &apos;CoreJava/src/com.jk.corejava.string&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.jk.string&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.jk.string" name="com.jk.corejava.string" qualified="false" references="true" stamp="1446562174096" textual="false" version="1.0"/>
+</session>

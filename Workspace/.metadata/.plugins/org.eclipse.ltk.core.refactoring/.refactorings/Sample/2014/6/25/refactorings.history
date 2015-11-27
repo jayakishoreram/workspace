@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.jk.swich&apos; to &apos;com.jk.java7&apos;&#x0D;&#x0A;- Original project: &apos;Sample&apos;&#x0D;&#x0A;- Original element: &apos;Sample/src/com.jk.swich&apos;&#x0D;&#x0A;- Renamed element: &apos;Sample/src/com.jk.java7&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.jk.swich&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.jk.swich" name="com.jk.java7" qualified="false" references="true" stamp="1403193715897" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+1436508150585	Rename package 'com.jk.store.service'
+1436508183252	Rename type 'AddressService'
+1436508203011	Rename type 'CustomerService'
+1436508214059	Rename type 'OrderService'
+1436508223720	Rename type 'ProductService'
+1436512740076	Rename resource 'persistence-mysql.properties'
+1436532371752	Copy package
+1436532385359	Delete elements
+1436532418038	Delete element

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd" default-init-method="init" default-destroy-method="clean">
+	 <!-- singleton, prototype -->
+	 
+	 <!-- <bean id="beanA" class="com.jk.spring.ioc.BeanA">
+	 	<property name="beanB" ref="beanB"/>
+	 </bean>
+	 <bean id="beanB" class="com.jk.spring.ioc.BeanB"/> -->
+	 
+	<!-- <bean id="beanA" class="com.jk.spring.ioc.BeanA" factory-method="getInstanceA"/>
+	<bean id="beanB" class="com.jk.spring.ioc.BeanA" factory-method="getInstanceB"/>  -->
+	
+	
+	<!-- <bean id="beanA" factory-bean="beanB" factory-method="getInstanceA"/> 
+	<bean id="beanB" class="com.jk.spring.ioc.BeanA" factory-method="getInstanceB"/>
+	  <bean id="beanB1" factory-bean="beanB" factory-method="getInstanceB"/> -->
+	  
+	  <!-- <bean id="beanA" class="com.jk.spring.ioc.BeanA" scope="singleton">
+	  	<constructor-arg name="beanB" ref="beanB"/>
+	  </bean>
+	  
+	  <bean id="beanB" class="com.jk.spring.ioc.BeanA"  factory-method="getInstanceA"  scope="singleton"/> -->
+	 
+	  <context:component-scan base-package="com.jk.spring.ioc"/>
+	  <bean id="beanB1" class="com.jk.spring.ioc.BeanB" scope="prototype">
+	  	<qualifier value="beanB1"/>
+	  </bean>
+	  <bean id="beanB2" class="com.jk.spring.ioc.BeanB" scope="prototype" />
+	  <bean id="beanB3" class="com.jk.spring.ioc.BeanB" scope="prototype"/>
+	  
+	  <bean id="parent" class="com.jk.spring.ioc.Parent"/>
+	  <bean id="child" class="com.jk.spring.ioc.Child" parent="parent"/>
+</beans>

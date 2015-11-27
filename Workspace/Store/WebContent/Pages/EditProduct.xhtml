@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+</h:head>
+<h:body>
+	<h2>
+		<h:outputText value="Create Product "
+			rendered="#{ProductMB.product.id == null}" />
+		<h:outputText value="Edit Product "
+			rendered="#{ProductMB.product.id != null}" />
+	</h2>
+	<h:form style="align:right">
+		<h:messages />
+		<h:panelGrid columns="2">
+			<h:outputText value="Name:  " style="align:left" />
+			<h:inputText value="#{ProductMB.product.name}"></h:inputText>
+			<h:outputText value="Description:  " />
+			<h:inputText value="#{ProductMB.product.description}"></h:inputText>
+			<h:outputText value="Rating:  " />
+			<h:inputText value="#{ProductMB.product.rating}">
+			</h:inputText>
+			<h:outputText value="Price:  " />
+			<h:inputText value="#{ProductMB.product.price}"></h:inputText>
+			<h:outputText value="Quantity: " />
+			<h:inputText value="#{ProductMB.product.quantity}"></h:inputText>
+			<h:commandButton value="Save" action="#{ProductMB.saveProduct}" />
+			<h:commandButton value="Cancel" action="#{ProductMB.cancel}" />
+		</h:panelGrid>
+
+	</h:form>
+</h:body>
+</html>

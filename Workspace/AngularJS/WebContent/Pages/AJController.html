@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<body>
+
+	<p>Controllers</p>
+
+	<!-- <div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "John";
+    $scope.lastName= "Doe";
+});
+</script> -->
+
+
+	<!-- <div data-ng-app="myApp" data-ng-controller="ctrl">
+
+		<table>
+			<tr>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Full Name</th>
+			</tr>
+			<tr>
+				<th><input type="text" data-ng-model="firstName"></th>
+				<th><input type="text" data-ng-model="lastName"></th>
+				<th><span data-ng-bind="firstName +' ' + lastName"></span></th>
+				<th><span data-ng-bind="fullName()"></span></th>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			var app = angular.module('myApp', []);
+			app.controller('ctrl', function($scope) {
+
+				$scope.firstName = "Jayakishore";
+				$scope.lastName = "Ramachandrareddygari";
+				$scope.fullName = function() {
+					return $scope.firstName + " " + $scope.lastName;
+				}
+			});
+		</script>
+
+
+	</div> -->
+	
+		<div data-ng-app="myApp" data-ng-controller="ctrl">
+		<!-- <ul>
+			<li data-ng-repeat="person in persons"><span
+				data-ng-bind="person.name"></span> <span data-ng-bind="person.age"></span>
+			</li>
+		</ul> -->
+		<table data-ng-repeat="person in persons" border="1">
+			<tr>
+				<td><span
+				data-ng-bind="person.name"></span> </td>
+				<td><span
+				data-ng-bind="person.age"></span> </td>
+			</tr>
+		</table>
+		<script type="text/javascript" src="..\js\control.js"></script>
+	</div>
+
+
+</body>
+</html>

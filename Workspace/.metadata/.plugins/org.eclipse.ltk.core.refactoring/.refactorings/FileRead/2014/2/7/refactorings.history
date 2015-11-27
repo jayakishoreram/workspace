@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;CloneClass&apos; to &apos;Clone&apos;&#x0D;&#x0A;- Original project: &apos;FileRead&apos;&#x0D;&#x0A;- Original element: &apos;FileRead/src/CloneClass&apos;&#x0D;&#x0A;- Renamed element: &apos;FileRead/src/Clone&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;CloneClass&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;CloneClass" name="Clone" qualified="false" references="true" stamp="1392468113861" textual="false" version="1.0"/>
+</session>

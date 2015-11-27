@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html data-ng-app="userForm" data-ng-novalidate>
+<head>
+<meta charset="ISO-8859-1">
+<title>Users</title>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<link rel="stylesheet"
+	href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+</head>
+<body>
+	<div data-ng-controller="userController" class="container">
+		<br> <br>
+		<div class="form-group">
+			<label class="control-label">User search:</label> <input type="text"
+				data-ng-model="search" placeholder="User search">
+		</div>
+		<br> <br>
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<td>First Name</td>
+					<td>Last Name</td>
+					<td>Email</td>
+					<td>Action</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr data-ng-repeat="user in users | filter:search">
+					<td><output data-ng-bind="user.firstName" name="firstName"></output>
+					</td>
+					<td><output data-ng-bind="user.lastName"></output></td>
+					<td><output data-ng-bind="user.email"></output></td>
+					<td><button data-ng-click="editUser(user.id)" class="btn">
+							<span class="glyphicon glyphicon-pencil"></span>&nbsp;&nbsp;Edit
+						</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br> <br>
+		<button data-ng-click="addUser()" class="btn btn-success">
+			<span class="glyphicon glyphicon-user"></span> Create New User
+		</button>
+
+		<br> <br> <span data-ng-show="showUser">
+			<h3 data-ng-show="isEdit">Edit User</h3>
+			<h3 data-ng-show="isAdd">Create User</h3>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">First Name:</label>
+					<div class="col-sm-8">
+						<input type="text" data-ng-model="user.firstName"
+							placeholder="First Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Last Name:</label>
+					<div class="col-sm-8">
+						<input type="text" data-ng-model="user.lastName"
+							placeholder="Last Name">
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label">Email:</label>
+					<div class="col-sm-8">
+						<input type="email" data-ng-model="user.email"
+							placeholder="Email">
+					</div>
+				</div>
+			</form>
+			<button class="btn btn-success" data-ng-click="saveUser()"
+				data-ng-disabled="error">
+				<span class="glyphicon glyphicon-save"></span> Save User
+			</button>
+			<button class="btn btn-failure" data-ng-click="cancel()">
+				<span class="glyphicon glyphicon-cancel"></span> Cancel User
+			</button>
+		</span>
+	</div>
+	<script type="text/javascript" src="..\js\userControl.js"></script>
+</body>
+</html>

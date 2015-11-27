@@ -1,0 +1,63 @@
+Log file opened in _tmain at 02/26/2013 05:32:49 AM...
+Function Entry Exit Trace set to False...
+Function Return Status Trace set to False...
+Function Parameter list Trace set to False...
+Object Status Trace set to False...
+Command line params:
+C:\EPMMATS_PS3_DTE\epmmats\qebuild/..\qebuild/..\qebuild/..\tests\hfmhat\hatEx.exe
+-E0
+-R0
+-OC:\EPMMATS_PS3_DTE\epmmats\qebuild/..\qebuild/..\qebuild/..\tests\hfmhat\erpi\ERPIHFM_VerifyData.log
+-IC:\EPMMATS_PS3_DTE\epmmats\qebuild/..\qebuild/..\qebuild/..\tests\hfmhat\erpi\ERPIHFM_VerifyData.txt
+-MC:\EPMMATS_PS3_DTE\epmmats\qebuild/..\qebuild/..\qebuild/..\qebuild\build.properties
+The input test file is: C:\EPMMATS_PS3_DTE\epmmats\qebuild/..\qebuild/..\qebuild/..\tests\hfmhat\erpi\ERPIHFM_VerifyData.txt
+<02/26/2013 05:32:49 AM> DefineMacro... Success
+Getting cells
+Logon Successful!
+<02/26/2013 05:32:49 AM> Logon... Success
+Macro: __@COMPUTERNAME__ , STM10296
+Macro: __@DQUOTECHAR__ , "
+Macro: __@HATLOGDIR__ , C:\EPMMATS_PS3_DTE\epmmats\qebuild/..\qebuild/..\qebuild/..\tests\hfmhat\erpi
+Macro: __@HFMVERSION__ , 11.1.2.3.000.3975
+Macro: __@LOOPCOUNT__ , 0
+Macro: __@SCRIPTDIR__ , C:\EPMMATS_PS3_DTE\epmmats\qebuild/..\qebuild/..\qebuild/..\tests\hfmhat\erpi
+Macro: __Domain__ , 
+Macro: __HFMICTAPPFCM__ , STAT
+Macro: __HFMICTDOCNAME__ , MatchByAcc
+Macro: __HFMTESTAPPFCM__ , FCMXX3
+Macro: __HFMTESTDIR__ , C:\EPMMATS_PS3_DTE\epmmats\qebuild/../tests/hfmhat
+Macro: __PASSWORD__ , password
+Macro: __PROJECT__ , Default Application Group
+Macro: __SERVER__ , stm10296
+Macro: __USER__ , admin
+Macro: __WEBURL__ , http://stm10296:80/hfm
+<02/26/2013 05:32:49 AM> ShowMacros... Success
+<02/26/2013 05:32:49 AM> OpenApplication... Success
+The POV is : 
+  Scenerio:	 Actual : 1
+  Year:		 2008 : 2008
+  Period:	 May : 83886090
+  View:		 Periodic : 1
+  Parent:	 Europe : 5
+  Entity:	 England : 4
+  Value:	 GBR : 20
+  Account:	 Cash : 3
+  ICP:		 [ICP None] : 2130706432
+  Custom1:	 [None] : 0
+  Custom2:	 [None] : 0
+  Custom3:	 [None] : 0
+  Custom4:	 Increases : 3
+<02/26/2013 05:32:49 AM> SetPOVName... Success
+The returned value of GetCell is : 2222.000000 and the status is : 2462080
+<02/26/2013 05:32:49 AM> GetCell... Success
+<02/26/2013 05:32:49 AM> CloseApplication... Success
+<02/26/2013 05:32:49 AM> LogOut... Success
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                             SUMMARY
+0 file compare error(s)!
+0 execution error(s)
+     0 positive tests failed
+     0 negative tests failed
+0 syntax error(s)
+Elapsed time: 00:00:00:177
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

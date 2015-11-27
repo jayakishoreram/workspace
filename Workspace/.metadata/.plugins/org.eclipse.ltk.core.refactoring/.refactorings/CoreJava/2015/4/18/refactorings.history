@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.jk.corejava.oops.C12.java&apos; to &apos;RQ200_10.java&apos;&#x0D;&#x0A;- Original project: &apos;CoreJava&apos;&#x0D;&#x0A;- Original element: &apos;com.jk.corejava.oops.C12.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.jk.corejava.oops.RQ200_10.java&apos;" description="Rename compilation unit &apos;C12.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;com.jk.corejava.oops{C12.java" name="RQ200_10.java" references="false" stamp="1430145904115" version="1.0"/>
+</session>
